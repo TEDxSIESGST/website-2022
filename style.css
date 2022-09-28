@@ -5,8 +5,8 @@
   --background: #fff;
   --nav: #fff;
   --footer: #0f0f0f;
-  --footer-img: url(../assets/vector-3-light.png);
-  --nav-logo: url(../assets/TEDxSIESGST_without_bg_black-1.png);
+  --footer-img: url(./assets/vector-3-light.png);
+  --nav-logo: url(./assets/TEDxSIESGST_without_bg_black-1.png);
 }
 
 * {
@@ -187,6 +187,7 @@ button {
   font-size: 21px;
   margin-right: 5px;
 }
+
 /*--------------------- THEME SECTION ------------------------*/
 
 .title {
@@ -339,6 +340,7 @@ button {
   overflow-y: hidden;
   /* margin-top: 40% !important;  */
 }
+
 /* .register img{
   height: 60vh;
   width: 110%;
@@ -365,6 +367,7 @@ button {
   bottom: 186px;
   left: 20%;
 }
+
 .regh {
   color: whitesmoke;
   position: relative;
@@ -381,6 +384,7 @@ button {
   margin-top: -370px;
   left: 45%;
 }
+
 .regbut button {
   width: 100%;
   background-color: #e62b1e;
@@ -389,6 +393,7 @@ button {
   padding-top: 6%;
   padding-bottom: 6%;
 }
+
 @media (max-width: 700px) {
   .regh {
     font-size: 5vw;
@@ -400,12 +405,14 @@ button {
     width: 90vw;
     left: 5%;
   }
+
   .regbut {
     width: 20vw;
     left: 39% !important;
     padding: 2%;
   }
 }
+
 .regbut button:hover {
   cursor: pointer;
   background-color: #be271c;
@@ -417,22 +424,27 @@ footer {
   width: 100% !important;
   background-color: var(--footer);
 }
+
 .about,
 .connect {
   display: flex;
   flex-wrap: wrap;
 }
+
 .connect {
   margin-right: 7px;
 }
+
 .csvg {
   padding: 0 7px;
   fill: whitesmoke !important;
 }
+
 .csvg:hover {
   cursor: pointer;
   fill: #e62b1e !important;
 }
+
 .f1 {
   display: flex;
   justify-content: space-between;
@@ -440,6 +452,7 @@ footer {
   justify-content: flex-end;
   margin-right: 20px;
 }
+
 .p1 img {
   width: 15vw;
   padding-left: 10px;
@@ -452,13 +465,16 @@ footer {
   flex-wrap: wrap;
   gap: 10px;
 }
+
 .p2 {
   display: flex;
   margin-right: 10px;
 }
+
 .p2 p:hover {
   cursor: pointer;
 }
+
 .rulers {
   height: 2px;
   background-color: #ffaba5;
@@ -509,16 +525,74 @@ footer {
   transition: transform 0.2s linear;
 }
 
-.checkbox:checked + .label .ball {
+.checkbox:checked+.label .ball {
   transform: translateX(28px);
 }
 
-@media (max-width:375px)
-{
-  .logo{
+@media (max-width:375px) {
+  .logo {
     width: 204px;
   }
-  .main-nav{
+
+  .main-nav {
     padding: 10px 6px;
   }
 }
+
+.card {
+  /* width: 20vw; */
+  /* height: 20vw; */
+  padding: 1%;
+  border-radius: 1rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  text-align: center;
+  margin: 20px 10px 0px 10px;
+  background-color: #fff;
+}
+
+.card p {
+  color: gray;
+  margin-top: 10px;
+  font-size: small;
+  text-align: left;
+}
+
+.dia {
+  padding: 2%;
+  margin: auto;
+  background-color: gainsboro;
+}
+
+
+.book:hover {
+  background-color: #000;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+}
+
+.cflex {
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+}
+
+.close {
+  float: right;
+  border: 2px solid #000;
+  padding: 0.5%;
+  /* margin-top: 20px; */
+  /* margin-right: 10px; */
+}
+
+.book {
+  margin-top: 20px;
+  background-color: #fff;
+  border: 2px solid #000;
+  padding: 2% 4%;
+}
+
+
+/* .card-con {
+  width: 90%;
+} */

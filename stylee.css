@@ -4,7 +4,9 @@
   --font: #3f3f3f;
   --background: #fff;
   --footer: #0f0f0f;
-  --nav-logo: url(../assets/TEDxSIESGST_without_bg_black-1.png);
+  --nav-logo: url(./assets/TEDxSIESGST_without_bg_black-1.png);
+  --main: #cbcbcbac;
+  /* --mainbg: url(./assets/output-onlinepngtools.png); */
 }
 
 * {
@@ -19,6 +21,7 @@ body {
   overflow-x: hidden;
   background-color: var(--background);
 }
+
 li {
   list-style: none;
 }
@@ -122,12 +125,21 @@ button {
 /*--------------------- HERO SECTION ------------------------*/
 
 .main-section {
-  background-image: url(../assets/hero-img.png);
+  background-image: url(./assets/Theme-reveal_Altering-arcs_02.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 100vh;
+  width: 100vw;
   position: relative;
+}
+
+
+.main {
+  background-color: var(--main);
+  height: 100%;
+  margin-top: -17px;
+  width: 100%;
 }
 
 .hero-section {
@@ -136,7 +148,7 @@ button {
   align-items: center;
   flex-direction: column;
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -190,6 +202,7 @@ button {
   font-size: 21px;
   margin-right: 5px;
 }
+
 /*--------------------- THEME SECTION ------------------------*/
 
 .title {
@@ -337,6 +350,7 @@ button {
   background-color: #be271c;
   transition: 0.3s;
 }
+
 .btn-filled:hover {
   background-color: #be271c;
   transition: 0.3s;
@@ -348,22 +362,27 @@ footer {
   width: 100% !important;
   background-color: var(--footer);
 }
+
 .about,
 .connect {
   display: flex;
   flex-wrap: wrap;
 }
+
 .connect {
   margin-right: 7px;
 }
+
 .csvg {
   padding: 0 7px;
   fill: whitesmoke !important;
 }
+
 .csvg:hover {
   cursor: pointer;
   fill: #e62b1e !important;
 }
+
 .f1 {
   display: flex;
   justify-content: space-between;
@@ -371,6 +390,7 @@ footer {
   justify-content: flex-end;
   margin-right: 20px;
 }
+
 .p1 img {
   width: 15vw;
   padding-left: 10px;
@@ -383,13 +403,16 @@ footer {
   flex-wrap: wrap;
   gap: 10px;
 }
+
 .p2 {
   display: flex;
   margin-right: 10px;
 }
+
 .p2 p:hover {
   cursor: pointer;
 }
+
 .rulers {
   height: 2px;
   background-color: #ffaba5;
@@ -435,16 +458,73 @@ footer {
   transition: transform 0.2s linear;
 }
 
-.checkbox:checked + .label .ball {
+.checkbox:checked+.label .ball {
   transform: translateX(28px);
 }
 
-@media (max-width:375px)
-{
-  .logo{
+@media (max-width:375px) {
+  .logo {
     width: 204px;
   }
-  .main-nav{
+
+  .main-nav {
     padding: 10px 6px;
   }
 }
+
+.card {
+  /* width: 20vw; */
+  /* height: 20vw; */
+  padding: 1%;
+  border-radius: 1rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  text-align: center;
+  margin: 20px 10px 0px 10px;
+  background-color: #fff;
+}
+
+.card p {
+  color: gray;
+  margin-top: 10px;
+  font-size: small;
+  text-align: left;
+}
+
+.dia {
+  padding: 2%;
+  margin: auto;
+  background-color: gainsboro;
+}
+
+
+.book:hover {
+  background-color: #000;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+}
+
+.cflex {
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+}
+
+.close {
+  float: right;
+  border: 2px solid #000;
+  padding: 0.5%;
+  /* margin-top: 20px; */
+  /* margin-right: 10px; */
+}
+
+.book {
+  margin-top: 20px;
+  background-color: #fff;
+  border: 2px solid #000;
+  padding: 2% 4%;
+}
+
+/* .card-con {
+  width: 90%;
+} */
