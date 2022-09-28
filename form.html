@@ -113,38 +113,38 @@ See ya!</p>
                         <div class="mb-2 first">
                          
                             <input autocomplete="on" type="text" class="form-control mx-auto" id="name"
-                                name="name" placeholder="Name">
+                                name="name" placeholder="Name" required>
                         </div>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <div class="mb-2 first">
                           
                             <input autocomplete="on" type="email" class="form-control mx-auto" id="email"
-                                aria-describedby="emailHelp" name="email" placeholder="Email">
+                                aria-describedby="emailHelp" name="email" placeholder="Email" required>
                         </div>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <div class="mb-2 last">
                         
-                            <input autocomplete="on" type="text" class="form-control mx-auto" id="phone" name="phone" placeholder="Phone No.">
+                            <input autocomplete="on" type="text" class="form-control mx-auto" id="phone" name="phone" placeholder="Phone No." required>
                         </div>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <div class="mb-2 last">
                         
-                            <input autocomplete="on" type="text" class="form-control mx-auto" id="city" name="city" placeholder="City">
+                            <input autocomplete="on" type="text" class="form-control mx-auto" id="city" name="city" placeholder="City" required>
                         </div>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <div class="mb-2 last">
                         
-                            <input autocomplete="on" type="text" class="form-control mx-auto" id="edu" name="edu" placeholder="Education">
+                            <input autocomplete="on" type="text" class="form-control mx-auto" id="edu" name="edu" placeholder="Education" required>
                         </div>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <div class="mb-2 last">
                         
-                            <input autocomplete="on" type="text" class="form-control mx-auto" id="oppu" name="oppu" placeholder="Occupation">
+                            <input autocomplete="on" type="text" class="form-control mx-auto" id="oppu" name="oppu" placeholder="Occupation" required>
                         </div>
                     </div>
                     <!-- <div class="col-lg-12 col-md-12 col-sm-12">
@@ -169,13 +169,13 @@ See ya!</p>
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <select id="type" name="type" class="form-select mt-2 mb-2 form-drop mx-auto" aria-label="Default select example">
                             <option class="opt" selected="true" disabled="disabled">Type of ticket</option>
-                            <option class="opt" value="VIP">VIP</option>
-                            <option class="opt" value="Normal">Normal</option>
+                            <option class="opt opt1" value="VIP">VIP</option>
+                            <option class="opt opt1" value="Normal">Normal</option>
                         </select>
                     </div>
                 </div>
                 <div style="text-align: center;">
-               <a href=""> <button class="button" type="submit">Submit</button></a></div>
+               <a href=""> <button class="button mt-3" type="submit">Submit</button></a></div>
                <p id="submitMessage" class="submitMessage"></p>
             </form>
             </div>
@@ -282,7 +282,7 @@ See ya!</p>
         form.addEventListener('submit', e => {
             e.preventDefault()
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => document.getElementById("submitMessage").innerText="Thank you for showing your interest. A confirmation mail will be sent within 24hrs.")
+                .then(response => alert("Thank you for showing your interest. A confirmation mail will be sent within 24hrs."))
                 .catch(error => console.error(error.message))
             document.getElementById("ticketForm").reset();
         });

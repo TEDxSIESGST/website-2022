@@ -745,7 +745,9 @@ textarea::placeholder {
   form {
     width: 70vw;
     padding: 1% 0.2%;
+    margin-top: 35px;
   }
+
 }
 
 .form-con {
@@ -761,6 +763,10 @@ textarea::placeholder {
 
 select {
   color: var(--background) !important;
+}
+
+.opt1 {
+  color: #000;
 }
 
 .form-p p {

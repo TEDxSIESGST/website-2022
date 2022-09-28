@@ -234,7 +234,7 @@ button {
 
 /*--------------------- RESPONSIVE ------------------------*/
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .nav-items-right {
     display: none;
   }
@@ -528,3 +528,10 @@ footer {
 /* .card-con {
   width: 90%;
 } */
+
+
+@media (max-width:769px) {
+  .main {
+    background-color: #000;
+  }
+}
