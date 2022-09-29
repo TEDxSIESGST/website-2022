@@ -4,7 +4,7 @@
   --font: #3f3f3f;
   --background: #fff;
   --footer: #0f0f0f;
-  --nav-logo: url(./assets/TEDxSIESGST_without_bg_black-1.png);
+  /*--nav-logo: url(./assets/TEDxSIESGST_without_bg_black-1.png);*/
   --main: #cbcbcbac;
   /* --mainbg: url(./assets/output-onlinepngtools.png); */
 }
@@ -50,7 +50,7 @@ button {
 }
 
 .logo {
-  background-image: var(--nav-logo);
+  background-image: url(/assets/TEDxSIESGST_without_bg_white-1.png);
   width: 222px;
   height: 42px;
   cursor: pointer;
