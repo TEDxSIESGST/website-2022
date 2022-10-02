@@ -4,6 +4,7 @@
   --font: #3f3f3f;
   --background: #fff;
   --nav: #fff;
+  --foot: #000;
   --footer: #0f0f0f;
   --footer-img: url(./assets/vector-3-light.png);
   --nav-logo: url(./assets/TEDxSIESGST_without_bg_black-1.png);
@@ -540,14 +541,15 @@ footer {
 }
 
 .card {
-  /* width: 20vw; */
+  width: 250px;
   /* height: 20vw; */
-  padding: 1%;
+  padding: 2%;
   border-radius: 1rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   text-align: center;
+  border: 2px solid #e62b1e;
   margin: 20px 10px 0px 10px;
-  background-color: #fff;
+  background-color: var(--background);
 }
 
 .card p {
@@ -561,7 +563,7 @@ footer {
   padding: 3%;
   border-radius: 1rem;
   margin: auto;
-  background-color: rgb(23, 23, 23);
+  background-color: var(--foot);
 }
 
 
@@ -589,7 +591,7 @@ footer {
 .book {
   margin-top: 20px;
   background-color: transparent;
-  color: #fff;
+  color: var(--background);
   border: 2px solid #e62b1e;
   padding: 2% 4%;
 }
@@ -597,7 +599,6 @@ footer {
 /* .card-con {
   width: 90%;
 } */
-
 
 @media (max-width:769px) {
   .main {

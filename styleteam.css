@@ -4,9 +4,11 @@
   --teambackground: #fff;
   --nav: #fff;
   --footer: #0f0f0f;
+  --background: #fff;
   --footer-img: url(./assets/vector-3-light.png);
   --nav-logo: url(./assets/TEDxSIESGST_without_bg_black-1.png);
   --border: rgba(0, 0, 0, 0.4);
+  --foot: #000;
 }
 
 * {
@@ -605,41 +607,37 @@ footer {
   color: #000;
 }
 
-.car {
-  /* width: 20vw; */
-  /* height: 20vw; */
-  padding: 1%;
-  border-radius: 1rem;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  text-align: center;
-  margin: 20px 10px 0px 10px;
-  background-color: #fff;
-}
+
 
 .car:hover {
   border: none !important;
   transform: scale(1);
 }
 
+.car {
+  width: 250px !important;
+  /* height: 20vw; */
+  padding: 2%;
+  border-radius: 1rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  text-align: center;
+  margin: 20px 10px 0px 10px;
+  background-color: var(--background);
+}
+
 .car p {
   color: gray;
   margin-top: 10px;
-  margin-bottom: 0rem !important;
-  font-size: small;
+  font-size: small !important;
   text-align: left;
-}
-
-.car h1 {
   margin-bottom: 0rem !important;
-  font-size: 32px !important;
-  font-weight: bold;
 }
 
 .dia {
   padding: 3%;
   border-radius: 1rem;
   margin: auto;
-  background-color: rgb(23, 23, 23);
+  background-color: var(--foot);
 }
 
 
@@ -667,7 +665,7 @@ footer {
 .book {
   margin-top: 20px;
   background-color: transparent;
-  color: #fff;
+  color: var(--background);
   border: 2px solid #e62b1e;
   padding: 2% 4%;
 }

@@ -4,6 +4,7 @@
   --font: #3f3f3f;
   --background: #fff;
   --footer: #0f0f0f;
+  --foot: #000;
   /* --nav-logo: url(./assets/TEDxSIESGST_without_bg_black-1.png); */
   --main: #cbcbcbac;
   /* --mainbg: url(./assets/output-onlinepngtools.png); */
@@ -481,7 +482,7 @@ footer {
   text-align: center;
   border: 2px solid #e62b1e;
   margin: 20px 10px 0px 10px;
-  background-color: #fff;
+  background-color: var(--background);
 }
 
 .card p {
@@ -495,7 +496,7 @@ footer {
   padding: 3%;
   border-radius: 1rem;
   margin: auto;
-  background-color: rgb(23, 23, 23);
+  background-color: var(--foot);
 }
 
 
@@ -523,7 +524,7 @@ footer {
 .book {
   margin-top: 20px;
   background-color: transparent;
-  color: #fff;
+  color: var(--background);
   border: 2px solid #e62b1e;
   padding: 2% 4%;
 }
