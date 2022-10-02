@@ -4,7 +4,7 @@
   --font: #3f3f3f;
   --background: #fff;
   --footer: #0f0f0f;
-  --nav-logo: url(./assets/TEDxSIESGST_without_bg_black-1.png);
+  /* --nav-logo: url(./assets/TEDxSIESGST_without_bg_black-1.png); */
   --main: #cbcbcbac;
   /* --mainbg: url(./assets/output-onlinepngtools.png); */
 }
@@ -50,7 +50,7 @@ button {
 }
 
 .logo {
-  background-image: var(--nav-logo);
+  background-image: url(/assets/TEDxSIESGST_without_bg_white-1.png);
   width: 222px;
   height: 42px;
   cursor: pointer;
@@ -473,12 +473,13 @@ footer {
 }
 
 .card {
-  /* width: 20vw; */
+  width: 250px;
   /* height: 20vw; */
-  padding: 1%;
+  padding: 2%;
   border-radius: 1rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   text-align: center;
+  border: 2px solid #e62b1e;
   margin: 20px 10px 0px 10px;
   background-color: #fff;
 }
@@ -491,14 +492,15 @@ footer {
 }
 
 .dia {
-  padding: 2%;
+  padding: 3%;
+  border-radius: 1rem;
   margin: auto;
-  background-color: gainsboro;
+  background-color: rgb(23, 23, 23);
 }
 
 
 .book:hover {
-  background-color: #000;
+  background-color: #e62b1e;
   cursor: pointer;
   color: white;
   transition: 0.3s;
@@ -520,8 +522,9 @@ footer {
 
 .book {
   margin-top: 20px;
-  background-color: #fff;
-  border: 2px solid #000;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #e62b1e;
   padding: 2% 4%;
 }
 
@@ -533,5 +536,11 @@ footer {
 @media (max-width:769px) {
   .main {
     background-color: #000;
+  }
+}
+
+@media (max-width:426px) {
+  .cflex {
+    gap: 2px;
   }
 }

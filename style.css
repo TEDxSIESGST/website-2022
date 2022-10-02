@@ -558,14 +558,15 @@ footer {
 }
 
 .dia {
-  padding: 2%;
+  padding: 3%;
+  border-radius: 1rem;
   margin: auto;
-  background-color: gainsboro;
+  background-color: rgb(23, 23, 23);
 }
 
 
 .book:hover {
-  background-color: #000;
+  background-color: #e62b1e;
   cursor: pointer;
   color: white;
   transition: 0.3s;
@@ -587,12 +588,25 @@ footer {
 
 .book {
   margin-top: 20px;
-  background-color: #fff;
-  border: 2px solid #000;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #e62b1e;
   padding: 2% 4%;
 }
-
 
 /* .card-con {
   width: 90%;
 } */
+
+
+@media (max-width:769px) {
+  .main {
+    background-color: #000;
+  }
+}
+
+@media (max-width:426px) {
+  .cflex {
+    gap: 2px;
+  }
+}
