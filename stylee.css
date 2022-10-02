@@ -5,6 +5,7 @@
   --background: #fff;
   --footer: #0f0f0f;
   --foot: #000;
+  --popup: rgb(42, 42, 42);
   /* --nav-logo: url(./assets/TEDxSIESGST_without_bg_black-1.png); */
   --main: #cbcbcbac;
   /* --mainbg: url(./assets/output-onlinepngtools.png); */
@@ -496,7 +497,7 @@ footer {
   padding: 3%;
   border-radius: 1rem;
   margin: auto;
-  background-color: var(--foot);
+  background-color: var(--popup);
 }
 
 

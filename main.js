@@ -60,6 +60,7 @@ getComputedStyle(document.documentElement).getPropertyValue("--nav-logo");
 getComputedStyle(document.documentElement).getPropertyValue("--border");
 getComputedStyle(document.documentElement).getPropertyValue("--foot");
 getComputedStyle(document.documentElement).getPropertyValue("--main");
+getComputedStyle(document.documentElement).getPropertyValue("--popup");
 console.log("here", theme);
 if (theme === "dark") {
   document.getElementById("chk").checked = true;
@@ -70,6 +71,7 @@ if (theme === "dark") {
   document.documentElement.style.setProperty("--teambackground", "#191919");
   document.documentElement.style.setProperty("--nav", "#000");
   document.documentElement.style.setProperty("--footer", "#6C6C6C");
+  document.documentElement.style.setProperty("--popup", "#dcdcdc ");
   document.documentElement.style.setProperty(
     "--border",
     "rgba(69, 69, 69, 0.6)"
@@ -100,6 +102,7 @@ chk.addEventListener("change", () => {
     document.documentElement.style.setProperty("--teambackground", "#191919");
     document.documentElement.style.setProperty("--nav", "#000");
     document.documentElement.style.setProperty("--footer", "#6C6C6C");
+    document.documentElement.style.setProperty("--popup", "#dcdcdc");
     document.documentElement.style.setProperty(
       "--border",
       "rgba(69, 69, 69, 0.6)"
@@ -125,6 +128,7 @@ chk.addEventListener("change", () => {
     document.documentElement.style.setProperty("--teambackground", "#fff");
     document.documentElement.style.setProperty("--nav", "#fff");
     document.documentElement.style.setProperty("--footer", "#0f0f0f");
+    document.documentElement.style.setProperty("--popup", "rgb(42, 42, 42)");
     document.documentElement.style.setProperty(
       "--border",
       "rgba(0, 0, 0, 0.4)"

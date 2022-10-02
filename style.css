@@ -4,6 +4,7 @@
   --font: #3f3f3f;
   --background: #fff;
   --nav: #fff;
+  --popup: rgb(42, 42, 42);
   --foot: #000;
   --footer: #0f0f0f;
   --footer-img: url(./assets/vector-3-light.png);
@@ -563,7 +564,7 @@ footer {
   padding: 3%;
   border-radius: 1rem;
   margin: auto;
-  background-color: var(--foot);
+  background-color: var(--popup);
 }
 
 

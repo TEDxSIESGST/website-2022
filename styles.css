@@ -4,6 +4,7 @@
   --font: #3f3f3f;
   --background: #fff;
   --nav: #fff;
+  --popup: rgb(42, 42, 42);
   --footer: #0f0f0f;
   --footer-img: url(./assets/vector-3-light.png);
   --nav-logo: url(./assets/TEDxSIESGST_without_bg_black-1.png);
@@ -798,7 +799,7 @@ select {
   padding: 3%;
   border-radius: 1rem;
   margin: auto;
-  background-color: var(--foot);
+  background-color: var(--popup);
 }
 
 
