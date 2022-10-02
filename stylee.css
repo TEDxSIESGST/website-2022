@@ -51,8 +51,8 @@ button {
 
 .logo {
   background-image: url(/assets/TEDxSIESGST_without_bg_white-1.png);
-  width: 222px;
-  height: 42px;
+  width: 250px;
+  height: 30px;
   cursor: pointer;
   background-repeat: no-repeat;
   background-size: contain;
@@ -63,6 +63,7 @@ button {
   justify-content: space-between;
   align-items: center;
   padding: 10px 15px;
+  margin-top: 20px;
 }
 
 .nav-list {
@@ -102,11 +103,12 @@ button {
 
 .nav-btn {
   display: none;
-  padding: 10px 24px;
+  padding: 10px 15px;
+  border-radius: 5px;
   background: var(--test);
   color: #fff;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   align-items: center;
 }
 
@@ -128,12 +130,11 @@ button {
   background-image: url(./assets/Theme-reveal_Altering-arcs_02.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   height: 100vh;
   width: 100vw;
   position: relative;
 }
-
 
 .main {
   background-color: var(--main);
@@ -169,19 +170,24 @@ button {
 }
 
 .btn-div {
-  margin: 10px 0;
+  margin: 50px 0 0 0;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  /* flex-wrap: wrap; */
 }
 
 .btn-filled {
-  padding: 10px 24px;
+  padding: 10px 20px;
   background: #e62b1e;
+  border-radius: 10px;
   color: #fff;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   display: flex;
+  justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .btn-filled i {
@@ -189,8 +195,6 @@ button {
 }
 
 .btn-watch {
-  background: none;
-  margin-left: 15px;
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -276,6 +280,7 @@ button {
   }
 
   .btn-div {
+    flex-direction: row;
     margin: 40px 0;
   }
 
@@ -285,15 +290,17 @@ button {
   }
 
   .btn-filled {
+    margin-bottom: 0;
     font-size: 20px;
   }
 
   .btn-watch {
-    font-size: 16px;
+    /* padding: 20px; */
+    font-size: 20px;
   }
 
   .btn-watch i {
-    font-size: 23px;
+    font-size: 20px;
   }
 
   .title {
@@ -333,7 +340,7 @@ button {
   }
 
   .btn-filled {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .btn-watch {
@@ -342,7 +349,7 @@ button {
   }
 
   .btn-watch i {
-    font-size: 26px;
+    font-size: 20px;
   }
 }
 
@@ -458,11 +465,11 @@ footer {
   transition: transform 0.2s linear;
 }
 
-.checkbox:checked+.label .ball {
+.checkbox:checked + .label .ball {
   transform: translateX(28px);
 }
 
-@media (max-width:375px) {
+@media (max-width: 375px) {
   .logo {
     width: 204px;
   }
@@ -475,63 +482,169 @@ footer {
 .card {
   /* width: 20vw; */
   /* height: 20vw; */
-  padding: 1%;
-  border-radius: 1rem;
+  padding: 15px;
+  border-radius: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   text-align: center;
   margin: 20px 10px 0px 10px;
   background-color: #fff;
 }
 
+.card-con h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 10px;
+  font-size: 30px;
+  font-weight: 500px;
+}
+
 .card p {
-  color: gray;
-  margin-top: 10px;
-  font-size: small;
+  display: flex;
+  align-items: center;
+  color: rgb(95, 89, 89);
+  margin-top: 15px;
+  font-size: 18px;
   text-align: left;
 }
 
-.dia {
-  padding: 2%;
-  margin: auto;
-  background-color: gainsboro;
+.card p svg {
+  margin-right: 5px;
 }
 
+.dia {
+  border-radius: 10px;
+  padding: 40px 30px;
+  margin: auto;
+  background-color: gainsboro;
+  border: none;
+}
+
+.book {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  background-color: black;
+  color: white;
+  /* border: 2px solid #000; */
+  font-size: 18px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
 
 .book:hover {
-  background-color: #000;
-  cursor: pointer;
-  color: white;
-  transition: 0.3s;
+  color: red;
+  transition: 0.3s ease;
 }
 
 .cflex {
-  justify-content: space-around;
   display: flex;
   flex-direction: row;
 }
 
 .close {
-  float: right;
+  display: flex;
+  justify-content: flex-end;
+  color: red;
+  background: none;
+  width: 100%;
+  /* float: right;
   border: 2px solid #000;
-  padding: 0.5%;
+  padding: 0.5%; */
   /* margin-top: 20px; */
   /* margin-right: 10px; */
 }
 
-.book {
-  margin-top: 20px;
-  background-color: #fff;
-  border: 2px solid #000;
-  padding: 2% 4%;
+.close svg {
+  height: 50px;
+  width: auto;
 }
 
 /* .card-con {
   width: 90%;
 } */
 
-
-@media (max-width:769px) {
+@media (max-width: 768px) {
   .main {
     background-color: #000;
+  }
+
+  .dia {
+    border-radius: 10px;
+    padding: 10px 10px;
+  }
+
+  .card {
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 20px;
+  }
+
+  .cflex {
+    flex-direction: column;
+  }
+
+  .card-con h1 {
+    font-size: 22px;
+    margin: 10px;
+  }
+
+  .card-con p {
+    font-size: 15px;
+    /* margin: 5px; */
+  }
+
+  .book {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    padding: 10px 15px;
+  }
+
+  .close svg {
+    height: 30px;
+    width: auto;
+  }
+}
+@media (max-width: 375px) {
+  .main {
+    background-color: #000;
+  }
+
+  .dia {
+    border-radius: 10px;
+    padding: 10px 10px;
+  }
+
+  .card {
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 20px;
+  }
+
+  .cflex {
+    flex-direction: column;
+  }
+
+  .card-con h1 {
+    font-size: 20px;
+    margin: 10px;
+  }
+
+  .card-con p {
+    font-size: 12px;
+    /* margin: 5px; */
+  }
+
+  .book {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    padding: 10px 15px;
+  }
+
+  .close svg {
+    height: 25px;
+    width: auto;
   }
 }
