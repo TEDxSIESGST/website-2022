@@ -1,14 +1,14 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
 :root {
   --test: #e62b1e;
-  --font: #3f3f3f;
-  --background: #fff;
-  --nav: #fff;
-  --popup: rgb(42, 42, 42);
-  --foot: #000;
-  --footer: #0f0f0f;
-  --footer-img: url(./assets/vector-3-light.png);
-  --nav-logo: url(./assets/TEDxSIESGST_without_bg_black-1.png);
+  --font: #FFFFFF;
+  --background: #000;
+  --nav: #000;
+  --footer: #6C6C6C;
+  --footer-img: url(./assets/vector-3-dark.png);
+  --nav-logo: url(./assets/TEDxSIESGST_without_bg_white-1.png);
+  --foot: #dcdcdc;
+  --main: #000000be;
 }
 
 * {
@@ -102,11 +102,12 @@ button {
 
 .nav-btn {
   display: none;
-  padding: 10px 24px;
+  padding: 10px 15px;
+  border-radius: 5px;
   background: #e62b1e;
   color: #fff;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   align-items: center;
 }
 

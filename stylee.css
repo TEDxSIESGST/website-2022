@@ -1,26 +1,24 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
 :root {
   --test: #e62b1e;
-  --font: #3f3f3f;
-  --background: #fff;
-  --footer: #0f0f0f;
-  --foot: #000;
-  --popup: rgb(42, 42, 42);
-  /* --nav-logo: url(./assets/TEDxSIESGST_without_bg_black-1.png); */
-  --main: #cbcbcbac;
-  /* --mainbg: url(./assets/output-onlinepngtools.png); */
+  --font: #ffffff;
+  --background: #000;
+  --nav: #000;
+  --footer: #6c6c6c;
+  --footer-img: url(./assets/vector-3-dark.png);
+  --nav-logo: url(./assets/TEDxSIESGST_without_bg_white-1.png);
+  --foot: #dcdcdc;
+  --main: #000000be;
 }
+
 
 * {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
-  /* box-sizing: border-box; */
 }
 
-html,
 body {
-  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
   background-color: var(--background);
 }
 
@@ -34,10 +32,9 @@ a {
   cursor: pointer;
 }
 
-img {
+/* img {
   width: 100%;
-  display: inline-block;
-}
+} */
 
 button {
   border: none;
@@ -52,19 +49,21 @@ button {
 }
 
 .logo {
-  background-image: url(/assets/TEDxSIESGST_without_bg_white-1.png);
+  background-image: url('/assets/TEDxSIESGST_without_bg_white-1.png');
   width: 222px;
   height: 42px;
   cursor: pointer;
-  background-repeat: no-repeat;
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .main-nav {
   display: flex;
+  background-color: none;
   justify-content: space-between;
   align-items: center;
   padding: 10px 15px;
+  margin-top: 17px;
 }
 
 .nav-list {
@@ -104,11 +103,12 @@ button {
 
 .nav-btn {
   display: none;
-  padding: 10px 24px;
-  background: var(--test);
+  padding: 10px 15px;
+  border-radius: 5px;
+  background: #e62b1e;
   color: #fff;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   align-items: center;
 }
 
@@ -132,13 +132,11 @@ button {
   background-position: center;
   background-size: cover;
   height: 100vh;
-  width: 100vw;
+  width: auto;
   position: relative;
 }
 
-
 .main {
-  background-color: var(--main);
   height: 100%;
   margin-top: -17px;
   width: 100%;
@@ -162,28 +160,37 @@ button {
   font-family: "Montserrat", sans-serif;
   font-size: 32px;
   text-align: center;
-  color: var(--font);
+  color: #fff;
+  padding: 0 15px;
 }
 
 .header span {
   color: #e62b1e;
+  text-shadow: -2px 2px 0 #000, 2px 2px 0 #000, 2px -2px 0 #000,
+    -2px -2px 0 #000;
   /* text-decoration: underline wavy #bf807c; */
 }
 
 .btn-div {
-  margin: 10px 0;
+  margin: 50px 0 0 0;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 0 20px;
+  justify-content: center;
+  /* flex-wrap: wrap; */
 }
 
 .btn-filled {
-  padding: 10px 24px;
+  padding: 10px 20px;
   background: #e62b1e;
+  border-radius: 10px;
   color: #fff;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   display: flex;
+  justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .btn-filled i {
@@ -191,12 +198,10 @@ button {
 }
 
 .btn-watch {
-  background: none;
-  margin-left: 15px;
   font-weight: 500;
   display: flex;
   align-items: center;
-  color: var(--font);
+  color: #fff;
 }
 
 .btn-watch i {
@@ -265,7 +270,7 @@ button {
     font-size: 16px;
     line-height: 20px;
     margin: 0 5px;
-    color: var(--font);
+    color: #fff;
     transition: 0.33s ease;
   }
 
@@ -278,6 +283,7 @@ button {
   }
 
   .btn-div {
+    flex-direction: row;
     margin: 40px 0;
   }
 
@@ -287,15 +293,17 @@ button {
   }
 
   .btn-filled {
+    margin-bottom: 0;
     font-size: 20px;
   }
 
   .btn-watch {
-    font-size: 16px;
+    /* padding: 20px; */
+    font-size: 20px;
   }
 
   .btn-watch i {
-    font-size: 23px;
+    font-size: 20px;
   }
 
   .title {
@@ -335,7 +343,7 @@ button {
   }
 
   .btn-filled {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .btn-watch {
@@ -344,7 +352,7 @@ button {
   }
 
   .btn-watch i {
-    font-size: 26px;
+    font-size: 20px;
   }
 }
 
@@ -460,11 +468,11 @@ footer {
   transition: transform 0.2s linear;
 }
 
-.checkbox:checked+.label .ball {
+.checkbox:checked + .label .ball {
   transform: translateX(28px);
 }
 
-@media (max-width:375px) {
+@media (max-width: 375px) {
   .logo {
     width: 204px;
   }
@@ -477,8 +485,8 @@ footer {
 .card {
   width: 250px;
   /* height: 20vw; */
-  padding: 2%;
-  border-radius: 1rem;
+  padding: 15px;
+  border-radius: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   text-align: center;
   border: 2px solid #e62b1e;
@@ -486,63 +494,211 @@ footer {
   background-color: var(--background);
 }
 
+.card-con h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 10px;
+  font-size: 30px;
+  font-weight: 500px;
+}
+
 .card p {
-  color: gray;
-  margin-top: 10px;
-  font-size: small;
+  display: flex;
+  align-items: center;
+  color: rgb(95, 89, 89);
+  margin-top: 15px;
+  font-size: 18px;
   text-align: left;
 }
 
-.dia {
-  padding: 3%;
-  border-radius: 1rem;
-  margin: auto;
-  background-color: var(--popup);
+.card p svg {
+  margin-right: 5px;
 }
 
+.dia {
+  border-radius: 10px;
+  padding: 40px 30px;
+  margin: auto;
+  background-color: gainsboro;
+  border: none;
+}
+
+.book {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  background-color: black;
+  color: white;
+  /* border: 2px solid #000; */
+  font-size: 18px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
 
 .book:hover {
-  background-color: #e62b1e;
-  cursor: pointer;
-  color: white;
-  transition: 0.3s;
+  color: red;
+  transition: 0.3s ease;
 }
 
 .cflex {
-  justify-content: space-around;
   display: flex;
   flex-direction: row;
 }
 
 .close {
-  float: right;
+  display: flex;
+  justify-content: flex-end;
+  color: red;
+  background: none;
+  width: 100%;
+  /* float: right;
   border: 2px solid #000;
-  padding: 0.5%;
+  padding: 0.5%; */
   /* margin-top: 20px; */
   /* margin-right: 10px; */
 }
 
-.book {
-  margin-top: 20px;
-  background-color: transparent;
-  color: var(--background);
-  border: 2px solid #e62b1e;
-  padding: 2% 4%;
+.close svg {
+  height: 50px;
+  width: auto;
 }
 
 /* .card-con {
   width: 90%;
 } */
 
+@media (max-width: 768px) {
 
-@media (max-width:769px) {
   .main {
     background-color: #000;
   }
+
+  .dia {
+    border-radius: 10px;
+    padding: 10px 10px;
+  }
+
+  .card {
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 20px;
+  }
+
+  .cflex {
+    flex-direction: column;
+  }
+
+  .card-con h1 {
+    font-size: 22px;
+    margin: 10px;
+  }
+
+  .card-con p {
+    font-size: 15px;
+    /* margin: 5px; */
+  }
+
+  .book {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    padding: 10px 15px;
+  }
+
+  .close svg {
+    height: 30px;
+    width: auto;
+  }
 }
 
-@media (max-width:426px) {
+@media (max-width: 375px) {
+  .main {
+    background-color: #000;
+  }
+
+  .dia {
+    border-radius: 10px;
+    padding: 10px 10px;
+  }
+
+  .card {
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 20px;
+  }
+
   .cflex {
-    gap: 2px;
+    flex-direction: column;
+  }
+
+  .card-con h1 {
+    font-size: 20px;
+    margin: 10px;
+  }
+
+  .card-con p {
+    font-size: 12px;
+    /* margin: 5px; */
+  }
+
+  .book {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    padding: 10px 15px;
+  }
+
+  .close svg {
+    height: 25px;
+    width: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-items-right {
+    display: none;
+  }
+
+  .mobile {
+    display: none !important;
+  }
+
+  .nav-list {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background: none;
+    height: auto;
+    position: static;
+    justify-content: center;
+    top: 0%;
+    color: #fff;
+    padding-top: 0;
+    width: auto;
+  }
+
+  .nav-link {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 5px;
+    color: var(--font);
+    transition: 0.33s ease;
+  }
+
+  .nav-link:hover {
+    color: #e62b1e;
+  }
+
+  .nav-btn {
+    display: flex;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-link {
+    margin: 0 30px;
   }
 }
