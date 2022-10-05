@@ -60,6 +60,7 @@ getComputedStyle(document.documentElement).getPropertyValue("--nav-logo");
 getComputedStyle(document.documentElement).getPropertyValue("--border");
 getComputedStyle(document.documentElement).getPropertyValue("--foot");
 getComputedStyle(document.documentElement).getPropertyValue("--main");
+getComputedStyle(document.documentElement).getPropertyValue("--popup");
 console.log("here", theme);
 if (theme === "light") {
   document.documentElement.style.setProperty("--font", "#3F3F3F");
