@@ -16,21 +16,10 @@
   <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
-<style>
-  * {
-    box-sizing: content-box;
-  }
-
-  /* .msg{
-        box-sizing: border-box !important;
-        padding-left: 10px;
-    }
-  */
-</style>
 
 <body style="background-color: var(--background)">
   <nav class="main-nav con">
-    <a style="text-decoration: none" href="index.html">
+    <a  style="text-decoration: none;"  href="index.html">
       <div class="logo"></div>
     </a>
 
@@ -41,30 +30,29 @@
       <li><a href="team.html" class="navl">Team</a></li>
       <li>
         <a href="mailto: tedx@siesgst.ac.in">
-          <button class="contact mobile">
-            Contact us<i class="bx bx-right-arrow-alt"></i></button></a>
+        <button class="contact mobile">
+          Contact us<i class="bx bx-right-arrow-alt"></i>
+        </button></a>
       </li>
       <li class="close-icon mobile"><i class="bx bx-x"></i></li>
     </ul>
-    <div>
-      <div style="display: flex; align-items: center">
+    <a href="mailto: tedx@siesgst.ac.in">
+      <button class="contact">
+        Contact us<i class="bx bx-right-arrow-alt"></i>
+      </button></a>
+      <div style="display: flex; justify-content: center; align-items: center">
         <div style="margin-right: 10px">
           <input type="checkbox" class="checkbox" id="chk" />
           <label class="label" for="chk">
-            <i class="bx bxs-sun" style="color: #ffffff"></i>
             <i class="bx bxs-moon" style="color: #ffffff"></i>
+            <i class="bx bxs-sun" style="color: #ffffff"></i>
             <div class="ball"></div>
           </label>
         </div>
-        <a href="mailto: tedx@siesgst.ac.in">
-          <button class="nav-btn">
-            Contact us<i class="bx bx-right-arrow-alt"></i></button
-        ></a>
+        <div class="nav-items-right">
+          <i class="bx bx-menu" style="color: #e62b1e"></i>
+        </div>
       </div>
-
-    <div class="nav-items-right">
-      <i class="bx bx-menu" style="color: #e62b1e"></i>
-    </div>
   </nav>
 
   <div class="card-con">
@@ -87,10 +75,10 @@
       </p>
 
       <div>
-          <h1 class="ticket-div-header">Ticket Type</h1> 
+        <h1 class="ticket-div-header">Ticket Type</h1>
 
         <div class="ticket-div">
-          <div>
+          <div class="ticket-container">
             <p class="ticket-div-title">VIP Tickets</p>
             <ul class="ticket-div-list">
               <li>1. Exclusive Front row seats</li>
@@ -101,7 +89,7 @@
             </ul>
 
           </div>
-          <div>
+          <div class="ticket-container">
             <p class="ticket-div-title">Normal Tickets</p>
             <ul class="ticket-div-list">
               <li>1. Seats as per First come First Serve</li>
@@ -109,69 +97,76 @@
               <li>3. TEDx Merchandise</li>
               <li>4. Full Day Pass</li>
               <li>5. Lunch and snacks included</li>
-            </ul> 
+            </ul>
           </div>
         </div>
 
-        
-        <div><p class="ticket-para">Date of Conference: </p><b style="color: #e62b1e">16th October 2022</b></div>
-        <div> <p class="ticket-para">Time:</p> 10 Am to 5 PM</div>
-        <div><p class="ticket-para">Venue:</p> MBA Auditorium</p></div>
-        <p class="ticket-para">Hurry up Grab the early bird discount and save your seat See ya!</p> 
+
+        <div>
+          <p class="ticket-para">Date of Conference: </p><b style="color: #e62b1e">16th October 2022</b>
+        </div>
+        <div>
+          <p class="ticket-para">Time:</p> 10 Am to 5 PM
+        </div>
+        <div>
+          <p class="ticket-para">Venue:</p> MBA Auditorium</p>
+        </div>
+        <p class="ticket-para" style="font-weight: bold">Hurry up Grab the early bird discount and save your seat See ya!</p>
       </div>
 
       <a href="/assets/Theme Elaboration.pdf" target="_blank">
         <button class="moreinfobut">More Info</button></a>
     </div>
-    <div class="col-lg-6 col-md-12 col-sm-12">
+    <div class="col-lg-6 col-md-12 col-sm-12" style="
+    max-width: 500px !important;">
       <div class="form mx-auto">
         <form name="ticketForm" id="ticketForm" method="post" class="form1 mx-auto" autocomplete="on">
           <h2 class="form-head">Registration Form</h2>
           <div class="row" style="width: 100%">
             <div class="col-lg-12 col-md-12 col-sm-12">
-              <div class="mb-2 first">
+              <div class="mb-3 first">
                 <input autocomplete="on" type="text" class="form-control mx-auto" id="name" name="name"
                   placeholder="Name" required />
               </div>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12">
-              <div class="mb-2 first">
+              <div class="mb-3 first">
                 <input autocomplete="on" type="email" class="form-control mx-auto" id="email"
                   aria-describedby="emailHelp" name="email" placeholder="Email" required />
               </div>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12">
-              <div class="mb-2 last">
+              <div class="mb-3 last">
                 <input autocomplete="on" type="text" class="form-control mx-auto" id="phone" name="phone"
                   placeholder="Phone No." required />
               </div>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12">
-              <div class="mb-2 last">
+              <div class="mb-3 last">
                 <input autocomplete="on" type="text" class="form-control mx-auto" id="city" name="city"
                   placeholder="City" required />
               </div>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12">
-              <div class="mb-2 last">
+              <div class="mb-3 last">
                 <input autocomplete="on" type="text" class="form-control mx-auto" id="edu" name="edu"
                   placeholder="Education" required />
               </div>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12">
-              <div class="mb-2 last">
+              <div class="mb-3 last">
                 <input autocomplete="on" type="text" class="form-control mx-auto" id="oppu" name="oppu"
                   placeholder="Occupation" required />
               </div>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12">
-              <div class="mb-2 last">
+              <div class="mb-3 last">
                 <input name="times" id="times" required class="form-control mx-auto"
-                  placeholder="No. of times you have attended past Tedx conferences" />
+                  placeholder="How many Tedx conferences have you attended?" />
               </div>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12">
-              <div class="mb-2 last">
+              <div class="mb-3 last">
                 <input name="why" id="why" required class="form-control mx-auto"
                   placeholder="Why do you want to attend this TEDx conference?" />
               </div>
@@ -189,7 +184,7 @@
                 </div>
               </div> -->
             <div class="col-lg-12 col-md-12 col-sm-12">
-              <select id="type" name="type" class="form-select mt-5 mb-2 form-drop mx-auto"
+              <select id="type" name="type" class="form-select form-drop mx-auto"
                 aria-label="Default select example" required>
                 <option selected disabled value="">Type of ticket</option>
                 <option class="opt opt1" value="VIP">VIP</option>
