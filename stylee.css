@@ -492,7 +492,6 @@ footer {
   text-align: center;
   border: 2px solid #e62b1e;
   margin: 20px 10px 0px 10px;
-  background-color: var(--background);
 }
 
 .card-con h1 {
