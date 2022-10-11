@@ -213,7 +213,7 @@ h2 {
 
 .speakerinfo {
   display: flex;
-  padding-top: 50px;
+  padding: 50px 15px 0 15px;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 20px;
@@ -238,6 +238,7 @@ h2 {
   margin: 0 auto;
   padding: 5px;
   border: 2px solid var(--font);
+  object-fit: cover;
 }
 
 .speakercard h3 {
